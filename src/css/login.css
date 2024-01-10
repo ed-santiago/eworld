@@ -17,3 +17,26 @@
   font-size: 40px;
   color: rgb(24, 119, 242);
 }
+
+#login_form input {
+  height: 50px;
+  width: 350px;
+  background-color: white;
+  border: 2px solid rgb(221, 223, 226);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#login_form button {
+  height: 50px;
+  width: 355px;
+  border-radius: 8px;
+  border-style: none;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: rgb(24, 119, 242);
+  color: white;
+  cursor: pointer;
+}
