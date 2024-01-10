@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
-import Login from "./components/Login";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Friends from "./components/Friends";
-import FriendDetails from "./components/FriendDetails";
-import User from "./components/User";
+import Login from "./Login";
+import Header from "./Header";
+import Home from "./Home";
+import Friends from "./Friends";
+import FriendDetails from "./FriendDetails";
+import User from "./User";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
