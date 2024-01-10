@@ -1,6 +1,23 @@
 import React from "react";
 
 function Login() {
+  function handleChange(e) {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (formData.username === "esantiago" && formData.password === "edmond123") {
+      setIsLoggedIn(true);
+      history.push("/");
+    } else {
+      alert("wrong username or password")
+    }
+  }
+
   return (
     <div id="login">
       <h1>eWorld</h1>
