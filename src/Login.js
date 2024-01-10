@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import "../css/login.css";
 
-function Login() {
+function Login({ setIsLoggedIn }) {
+  const history = useHistory();
+  const [formData, setFormData] = useState({
+    username: "",
+    password: "",
+  });
+
   function handleChange(e) {
     setFormData({
       ...formData,
